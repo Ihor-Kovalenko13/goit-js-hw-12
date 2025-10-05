@@ -1,0 +1,146 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+input,
+input::placeholder,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  background: #fff;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 371px;
+  margin-top: 64px;
+  text-align: center;
+}
+input {
+  width: 272px;
+  border: 1px solid;
+  outline: transparent;
+  border-radius: 4px;
+  padding: 8px 16px 6px;
+  margin-right: 8px;
+  color: #2e2f42;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  transition: border-color 250ms ease, outline 250ms ease;
+}
+
+input:hover,
+input:focus {
+  border-color: #000;
+}
+
+input:active {
+  outline: #4e75ff;
+}
+
+input::placeholder {
+  color: #808080;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+
+.search {
+  width: 91px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 250ms ease;
+}
+
+.search:hover,
+.search:focus {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  margin: 0 auto;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  width: 1128px;
+  border-color: transparent;
+  margin-bottom: 36px;
+}
+
+.gallery-item {
+  flex-grow: 1;
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+img {
+  height: 260px;
+  width: 100%;
+}
+
+.description-list {
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #123643;
+  border: 1px solid #808080;
+}
+
+.description-item {
+  margin-top: 8px;
+}
+
+.description-title {
+  font-weight: 600;
+  line-height: 133%;
+  text-align: center;
+}
+
+.description-text {
+  text-align: center;
+}
+
+.load {
+  display: none;
+  padding: 8px 16px;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  background-color: #2b5b70;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 250ms ease;
+}
+
+.load:hover,
+.load:focus {
+  background-color: #33abd6;
+}
+
+.load.visible {
+  display: inline-block;
+}
